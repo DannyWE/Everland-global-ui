@@ -1,0 +1,21 @@
+# Logs
+npm-debug.log*
+newrelic_agent.log
+
+# Dependency directories
+node_modules
+
+# Temp files
+.DS_Store
+
+# IDE files
+.idea
+
+# Public
+dist
+
+# Yarn
+.yarnclean
+
+# Coverage
+coverage

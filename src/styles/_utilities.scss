@@ -1,0 +1,41 @@
+.text-truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.page-wrapper {
+  margin: 0 auto;
+  max-width: $max-width-desktop;
+  min-width: $breakpoint-mobile;
+  box-sizing: border-box;
+}
+
+.page-container {
+  min-height: 450px;
+}
+
+.transform-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin isIE {
+  //https://paper-leaf.com/blog/2014/09/targeting-ie-10-11-browsers-css/
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    /* IE10+ specific styles go here */
+    @content;
+  }
+}
+
+@mixin screenTakeover($zIndex: 1000) {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: $zIndex;
+}

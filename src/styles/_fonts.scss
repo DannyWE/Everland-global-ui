@@ -1,0 +1,14 @@
+@mixin font-face($font_family, $file_name, $font_weight) {
+  $font_url: 'https://s1.rui.au.reastatic.net/rui-static/font/' + $file_name;
+
+  @font-face {
+    font-family: $font_family;
+    src: url($font_url + '.eot');
+    src:
+      url($font_url + '.eot?#iefix') format('embedded-opentype'),
+      url($font_url + '.woff') format('woff'),
+      url($font_url + '.ttf') format('truetype');
+    font-weight: $font_weight;
+    font-style: normal;
+  }
+}

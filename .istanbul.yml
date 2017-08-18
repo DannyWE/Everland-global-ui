@@ -1,0 +1,10 @@
+instrumentation:
+  root: .
+  extensions:
+    - .js
+  default-excludes: true
+  excludes:
+    - src/**/*-test.js
+    - src/**/fixtures/*.js
+    - src/**/index.js
+    - src/webpack/*.js

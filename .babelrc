@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    "transform-runtime",
+    "inline-react-svg",
+    "array-includes"
+  ],
+  "presets": [
+    "es2015",
+    "react",
+    "stage-0",
+    "flow"
+  ]
+}

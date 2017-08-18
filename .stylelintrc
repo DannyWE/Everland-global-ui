@@ -1,0 +1,27 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-no-unsupported-browser-features"
+  ],
+  "rules": {
+    "property-no-unknown": null,
+    "selector-pseudo-class-no-unknown": null,
+    "plugin/no-unsupported-browser-features": [true, {
+      "browsers": [
+        "last 2 ios_saf versions",
+        "last 2 and_chr versions",
+        "last 2 chrome versions",
+        "ie 11",
+      ],
+      "ignore": [
+        "rem",
+        "outline",
+        "flexbox",
+        "css-resize",
+        "transforms3d",
+        "css-appearance",
+        "font-unicode-range"
+      ]
+    }]
+  }
+}

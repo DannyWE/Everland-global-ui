@@ -1,0 +1,68 @@
+@import 'global';
+
+@media (min-width: 320px) {
+  h1 {
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: Museo-Sans-100,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+  }
+  h3 {
+    font-family: Museo-Sans-700,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 0 0 1rem;
+    color: #333f48;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: Museo-Sans-100,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+  }
+  h3 {
+    font-family: Museo-Sans-700,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 0 0 1rem;
+    color: #333f48;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    font-family: Museo-Sans-100,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+  }
+}
+.main {
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,38 @@
+@import 'global';
+
+@include normalize;
+@include font-face('MuseoSans', 'museo-sans-500-v1', 500);
+@include font-face('MuseoSans', 'museo-sans-700-v1', 700);
+@include font-face('MuseoSans', 'museo-sans-900-v1', 900);
+@include font-face('Museo-Sans-300', 'museo-sans-300-v1', 300);
+@include font-face('Museo-Sans-700', 'museo-sans-700-v1', 700);
+
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  background: $color-light-grey;
+  font-size: $font-base;
+  font-family: $font-custom, $font-stack;
+  color: $color-bluestone;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+textarea {
+  font-family: $font-custom, $font-stack;
+  resize: none;
+
+  &::placeholder {
+    color: $color-pebble-50;
+    font-size: $font-sm;
+  }
+}
+
+button {
+  font-family: $font-custom, $font-stack;
+}
