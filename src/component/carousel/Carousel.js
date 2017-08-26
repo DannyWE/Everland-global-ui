@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import style from './Carousel.scss';
-import ImageCarousel from './ImageCarousel';
-import image1 from '../assets/gallery-1.png';
-import image2 from '../assets/gallery-2.png';
-import image3 from '../assets/gallery-3.png';
-
+import ImageCarousel from './ImageCarousel/ImageCarousel';
+import image1Url1 from './assets/melbourne-3.png';
+import image1Url2 from './assets/sydney-2.png';
+import image1Url3 from './assets/sydney-3.png';
 
 const PHOTOS = [
-  image1, image2, image3
+  image1Url2,
+  image1Url1,
+  image1Url3
 ];
 
 export default class Carousel extends Component {

@@ -1,32 +1,6 @@
 @import 'global';
 
-.header {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  position:fixed;
-  top:0;
-  box-sizing: border-box;
-  justify-content: space-between;
-  align-items: center;
-
-  @include tablet {
-    height: 50px;
-  }
-}
-
-.logo {
-  width: 150px;
-  overflow: hidden;
-
-  @include tablet {
-    width: 200px;
-  }
-}
-
-@import 'global';
-
-$mobile-panel-width: 245px;
+$mobile-panel-width: 80%;
 
 .container {
   display: flex;
@@ -42,7 +16,7 @@ $mobile-panel-width: 245px;
   top: 0;
   left: 0;
   width: $mobile-panel-width;
-  height: 100%;
+  height: 100vh;
   background: $color-bluestone;
   overflow: hidden;
   transform: translate(-100%);
@@ -84,6 +58,10 @@ $mobile-panel-width: 245px;
   z-index: 1;
 }
 
+.fixedContainer {
+  position: fixed;
+  top: 18px;
+}
 .hamburgerIcon {
   order: 1;
 

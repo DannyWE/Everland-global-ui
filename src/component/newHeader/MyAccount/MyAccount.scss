@@ -1,0 +1,88 @@
+@import 'global';
+
+$border-width: 5px;
+$userIconSize: 29px;
+$userIconSizeMobile: 24px;
+$arrowDownIconHeight: 10px;
+$dropDownContainerWidth: 300px;
+$dropDownContainerPadding: 9px;
+
+.container {
+  position: relative;
+  order: 3;
+  cursor: pointer;
+  font-size: $font-sm;
+
+  @include tablet {
+    display: inline-block;
+  }
+}
+
+.userIcon,
+.userIcon > img {
+  width: $userIconSizeMobile;
+  height: $userIconSizeMobile;
+
+  @include tablet {
+    width: $userIconSize;
+    height: $userIconSize;
+  }
+}
+
+.title {
+  display: none;
+
+  @include tablet {
+    display: inline-block;
+    margin-left: $space-sm;
+    font-size: $font-xs;
+  }
+
+  @include desktop {
+    font-size: $font-sm;
+  }
+}
+
+.arrowDownIcon {
+  display: none;
+
+  @include tablet {
+    display: inline-block;
+    height: $arrowDownIconHeight;
+    transform: rotate(-270deg);
+    margin-left: $space-xs;
+  }
+}
+
+.dropDownContainer {
+  background-color: $color-white;
+  width: $dropDownContainerWidth;
+  padding: $dropDownContainerPadding 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 48px;
+  z-index: 1;
+  right: -2px;
+
+  @include tablet {
+    top: 55px;
+    right: 0;
+  }
+
+  &::before {
+    content: '';
+    border: $border-width solid transparent;
+    border-bottom-color: $color-white;
+    position: absolute;
+    top: -10px;
+    right: $space-xs;
+
+    @include tablet {
+      right: 50px;
+    }
+  }
+
+  :nth-child(4) > div {
+    border-bottom: none;
+  }
+}

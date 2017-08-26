@@ -1,12 +1,11 @@
 import React from 'react';
 import styles from './MainNews.scss';
-import imgUrl from './assets/news.png';
 
 export default () => (
   <div className={styles.container}>
     <div className={styles.imageContainer}>
       <img className={styles.image}
-           src={imgUrl}
+           src="http://i2.au.reastatic.net/raw/06900f168eddb8058b2d0d5a697d3c27cd31ea27b28b04fb3160cff821983b33/main.jpg"
            alt="" />
     </div>
     <div className={styles.contentContainer}>

@@ -1,0 +1,91 @@
+@import 'global';
+
+.container {
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  margin: 0 20px;
+  z-index: 3;
+  border-left: 1px solid #FFF;
+  position: absolute;
+  color: #FFF;
+
+  @include tablet {
+    right: auto;
+    left: 40px;
+  }
+
+  @include desktop {
+    position: absolute;
+    width: 500px;
+    left: 40%;
+    bottom: 30px;
+    padding-left: 30px;
+    border-left: 1px solid #FFF;
+    z-index: 2;
+  }
+}
+.title {
+  top: -4px;
+  font-size: 25px;
+  line-height: 30px;
+  padding-bottom: 0;
+
+  p {
+    padding-bottom: 10px;
+    font-weight: 400;
+    margin: 0;
+    margin-left: 14px;
+  }
+
+  @include tablet {
+    position: relative;
+    top: -8px;
+    font-family: 'Colfax Light',sans-serif;
+    font-size: 45px;
+    line-height: 50px;
+    color: #FFF;
+    padding-bottom: 14px;
+  }
+
+  @include desktop {
+    position: relative;
+    top: -8px;
+    font-family: 'Colfax Light',sans-serif;
+    font-size: 45px;
+    line-height: 50px;
+    color: #FFF;
+    padding-bottom: 14px;
+  }
+}
+.link {
+  font-family: 'Armitage Regular',sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 1.2px;
+  color: #FFF;
+  text-transform: uppercase;
+  margin-left: 14px;
+
+  @include tablet {
+    font-family: 'Armitage Regular',sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1.2px;
+    color: #FFF;
+    text-transform: uppercase;
+  }
+
+  @include desktop {
+    font-family: 'Armitage Regular',sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1.2px;
+    color: #FFF;
+    text-transform: uppercase;
+  }
+}
+.linkAnchor {
+  color: #FFF;
+  text-decoration: none;
+}

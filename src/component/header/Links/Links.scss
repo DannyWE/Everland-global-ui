@@ -1,0 +1,66 @@
+@import 'global';
+
+.links {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: $space-sm 0 0 0;
+
+  @include tablet {
+    display: flex;
+    margin-top: 0;
+  }
+}
+
+.link {
+  align-items: center;
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.text {
+  display: flex;
+  color: $color-white;
+  text-decoration: none;
+  padding: 0 $space-lg;
+  line-height: 51px;
+  position: relative;
+  align-items: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: $space-lg;
+    right: $space-lg;
+    border-bottom: 1px solid rgba($color-white, 0.2);
+    bottom: 0;
+    height: 1px;
+  }
+
+  @include tablet {
+    color: $color-bluestone;
+    padding: 0 10px;
+    line-height: inherit;
+    height: 100%;
+    font-size: $font-xs;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    padding: 0 15px;
+    font-size: $font-sm;
+  }
+}
+
+.text:hover {
+  color: $color-white;
+
+  @include tablet {
+    color: $color-rca-blue;
+  }
+}

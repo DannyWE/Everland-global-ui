@@ -1,0 +1,43 @@
+@import 'global';
+
+.container {
+  order: 2;
+  display: block;
+  width: 100%;
+
+  @include tablet {
+    order: 1;
+    width: auto;
+  }
+}
+
+.logo {
+  height: 40px;
+  //display: flex;
+  //align-items: center;
+
+
+
+  @include tablet {
+    height: 50px;
+  }
+}
+
+.svg {
+  height: 40px;
+  width: 182px;
+  //margin: 0 auto;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  @include tablet {
+    left: 13%;
+  }
+
+  @include desktop {
+    left: 9%;
+    height: 50px;
+    width: 210px;
+  }
+}
