@@ -1,0 +1,23 @@
+@import 'global';
+
+.icon {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  width: $icon-md;
+  height: $icon-md;
+  top: -1px;
+  overflow: hidden;
+}
+
+//  TODO - to remove when we no longer need placeholders
+.placeholder {
+  background: $color-pebble-20;
+}
+
+.image {
+  position: relative;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}

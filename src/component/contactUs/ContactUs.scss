@@ -1,0 +1,104 @@
+@import 'global';
+
+$image-size: 120px;
+$close-button-size: 20px;
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: $space-md;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  min-width: $breakpoint-mobile;
+  transform: inherit;
+  border-radius: 0;
+
+  @include tablet {
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 250px;
+    border: 1px solid $color-pebble-5;
+    box-shadow: $box-shadow-default;
+    border-radius: $border-radius-default;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.title {
+  font-size: $font-xl;
+  line-height: $space-md-lg;
+  font-weight: $font-weight-heavy;
+  margin-bottom: $space-md;
+}
+
+.property {
+  display: flex;
+  margin-bottom: $space-md;
+}
+
+.imagePanel {
+  flex-shrink: 0;
+  max-width: $image-size;
+  height: $image-size;
+  border-radius: 50%;
+  border: 1px solid #e1e4e6;
+  overflow: hidden;
+
+  img {
+    height: $image-size;
+    transform: translate(-50%, -50%) translateZ(0) scale(1);
+    animation: none;
+
+  }
+}
+
+.details {
+  padding-right: 0;
+  flex: auto;
+  width: auto;
+}
+
+.textarea {
+  width: 100%;
+  box-sizing: border-box;
+  flex-grow: 1;
+  flex-basis: auto;
+  border-radius: $border-radius-default;
+  border: 1px solid $color-pebble;
+  padding: $space-xs;
+  margin-bottom: 28px;
+
+  @include tablet {
+    flex-basis: 224px;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.saveButton {
+  width: 215px;
+  margin-right: $space-md;
+}
+
+.cancelButton {
+  width: 112px;
+}
+
+.close {
+  cursor: pointer;
+  background: url("./img/close.svg") no-repeat center;
+  background-size: contain;
+  height: $close-button-size;
+  width: $close-button-size;
+  position: absolute;
+  top: $space-md;
+  right: $space-md;
+}

@@ -1,0 +1,27 @@
+@import 'global';
+
+$mobile-image-size: 120px;
+$tablet-image-height: 244px;
+
+.container {
+  width: $mobile-image-size;
+  height: $mobile-image-size;
+  position: relative;
+  background: darken($color-light-grey, 3%);
+  overflow: hidden;
+
+  @include tablet {
+    width: 100%;
+    height: $tablet-image-height;
+  }
+}
+
+.image {
+  composes: transform-center;
+  height: $mobile-image-size;
+
+  @include tablet {
+    height: $tablet-image-height;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+}

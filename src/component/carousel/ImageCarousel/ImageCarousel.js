@@ -89,7 +89,7 @@ export default class ImageCarousel extends Component {
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       afterChange: this.updateHighLight
     };
 

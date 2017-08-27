@@ -1,0 +1,90 @@
+@import 'global';
+
+.container {
+  padding: 0 $space-sm 0;
+  box-sizing: border-box;
+  flex: 1 1 ($breakpoint-mobile - 120px);
+  min-width: ($breakpoint-mobile - 120px);
+  overflow: hidden;
+  width: 100px;
+
+  @include tablet {
+    flex: 1 0 auto;
+    max-height: 120px;
+    width: 100%;
+    padding-top: 4px;
+  }
+}
+
+.name {
+  composes: text-truncate;
+  margin-bottom: $space-xs;
+  font-weight: $font-weight-bold;
+}
+
+.phone, .email {
+  font-size: $font-sm;
+  margin-bottom: $space-xs;
+  text-decoration: none;
+
+}
+
+.email {
+
+}
+
+.contactTitle {
+  font-size: 12px;
+  color: #0bacff;
+}
+
+.phoneText {
+  color: black;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  composes: text-truncate;
+  border-bottom: 1px solid #e1e4e6;
+  padding: 3px 0 8px;
+}
+
+.emailTitle {
+  font-size: 12px;
+  color: #0bacff;
+  margin-top: 8px;
+}
+
+.emailText {
+  padding: 3px 0;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  width: 130px;
+  composes: text-truncate;
+
+  @include tablet {
+    width: 210px;
+  }
+}
+
+.street,
+.suburb {
+  composes: text-truncate;
+}
+
+.phoneImg {
+  width: 24px;
+  position: absolute;
+  right: 16px;
+  top: 90px;
+}
+
+.emailImg {
+  width: 24px;
+  position: absolute;
+  right: 16px;
+  top: 140px
+}

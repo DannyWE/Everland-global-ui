@@ -1,0 +1,26 @@
+@import 'global';
+
+.badge {
+  display: inline-block;
+  color: $color-white;
+  position: absolute;
+  top: $space-xs;
+  left: 0;
+  font-size: $font-xs;
+  text-transform: uppercase;
+  padding: $space-xxs $space-xs;
+  border-radius: 0 #{$border-radius-default} #{$border-radius-default} 0;
+}
+
+.buy,
+.lease,
+.buyOrLease {
+  composes: badge;
+  background-color: $color-blue-dark;
+}
+
+.sold,
+.leased {
+  composes: badge;
+  background-color: $color_yellow_dark;
+}

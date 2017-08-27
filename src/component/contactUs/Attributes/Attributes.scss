@@ -1,0 +1,51 @@
+@import 'global';
+
+.container {
+  composes: text-truncate;
+  font-size: $font-sm;
+  margin: 0;
+  display: flex;
+}
+
+.attribute {
+  composes: text-truncate;
+}
+
+.floorOrLandArea,
+.carSpaces,
+.propertyTypes {
+  composes: attribute;
+}
+
+.floorOrLandArea,
+.carSpaces {
+  flex: 0 0 auto;
+}
+
+.attributeValue {
+  padding-left: ($icon-md + $space-xxs);
+  margin-right: $space-md;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.floorOrLandAreaAttributeValue {
+  composes: attributeValue text-truncate;
+  max-width: 90px;
+}
+
+.carSpacesAttributeValue {
+  composes: attributeValue text-truncate;
+  max-width: 68px;
+}
+
+.attributeIcon {
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+
+.separator {
+  padding: 0 $space-xxs;
+}

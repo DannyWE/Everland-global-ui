@@ -1,5 +1,6 @@
 import express from 'express';
 
+import path from 'path';
 const app = express();
 
 const webpack = require('webpack');
@@ -14,7 +15,14 @@ app.use(webpackDevMiddleware(compiler));
 app.use(webpackHotMiddleware(compiler));
 
 app.use(
-  '/',
+  '/news',
+  (req, res) => {
+    return res.set('content-type', 'text/html').send(app.locals.html)
+  }
+);
+
+app.use(
+  '*',
   (req, res) => (
     res.set('content-type', 'text/html').send(app.locals.html)
   ),

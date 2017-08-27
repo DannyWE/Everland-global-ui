@@ -6,7 +6,7 @@ import Photo from './Photo';
 export default () => (
   <div className={styles.container}>
     <a name="about" > </a>
-    <h2 className={styles.title} >About Us</h2>
+    <h2 className={styles.title} >Our People</h2>
     <div className={styles.details}>
       <div className={styles.leftContainer}>
         <CompanyInfo />
