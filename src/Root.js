@@ -17,7 +17,7 @@ ReactDOM.render(
         <Route exact path="/" component={Carousel} />
         <Route path="/news" component={NewsList}/>
         <Route path="/project" component={ProjectList}/>
-        <Route path="/people" component={PeopleList}/>
+        <Route path="/about" component={PeopleList}/>
       </Switch>
     </div>
   </BrowserRouter>,

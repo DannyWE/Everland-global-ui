@@ -7,9 +7,9 @@ import ContactUs from '../contactUs/ContactUs';
 
 const links = [
   {
-    href: '/news',
+    href: '/about',
     title: '',
-    text: 'Insight & News',
+    text: 'About',
   },
   {
     href: '/project',
@@ -17,14 +17,14 @@ const links = [
     text: 'Projects',
   },
   {
-    href: '/people',
+    href: '/news',
     title: '',
-    text: 'People',
+    text: 'News',
   },
   {
     href: '/contact',
     title: 'contactUs',
-    text: 'Contact us',
+    text: 'Contact',
   }
 ];
 

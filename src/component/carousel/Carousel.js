@@ -7,10 +7,10 @@ import image1Url3 from './assets/3.png';
 import image1Url4 from './assets/4.png';
 
 const PHOTOS = [
-  image1Url4,
   image1Url1,
   image1Url2,
   image1Url3,
+  image1Url4,
 ];
 
 export default class Carousel extends Component {

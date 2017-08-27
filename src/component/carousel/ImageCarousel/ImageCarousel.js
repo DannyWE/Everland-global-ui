@@ -12,19 +12,19 @@ import arrowDown from '../assets/arrow-down.png';
 const projectDetails = [
   {
     title: "Melbourne",
-    details: "the great view"
-  },
-  {
-    title: "Sydney",
-    details: "the city view"
+    details: "Day view"
   },
   {
     title: "Melbourne",
-    details: "investment choice"
+    details: "Night view"
   },
   {
-    title: "View ...",
-    details: "More ..."
+    title: "Sydney",
+    details: "View"
+  },
+  {
+    title: "Shanghai",
+    details: "View"
   }
 ];
 
@@ -71,9 +71,7 @@ export default class ImageCarousel extends Component {
     this.forceUpdate();
   }
   updateHighLight(index) {
-    console.log(index);
     const {title, details} = projectDetails[index];
-    console.log(title);
     _this.setState({
       title: title,
       details: details,

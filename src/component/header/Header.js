@@ -6,9 +6,9 @@ import Links from './Links/Links';
 
 const links = [
   {
-    href: '/news',
+    href: '/about',
     title: '',
-    text: 'Insight & News',
+    text: 'About',
   },
   {
     href: '/project',
