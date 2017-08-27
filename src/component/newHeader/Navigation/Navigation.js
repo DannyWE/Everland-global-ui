@@ -10,6 +10,7 @@ class Navigation extends Component {
 
     this.state = { isOpen: false };
     this.html = document.getElementsByTagName('html')[0];
+    this.toggleNavigation = this.toggleNavigation.bind(this);
   }
 
   componentDidMount() {
@@ -40,8 +41,9 @@ class Navigation extends Component {
         </div>
 
         <nav className={styles.navigation}>
-          <Links links={links} contactUs={contactUs} />
+          <Links links={links} contactUs={contactUs} toggleNavigation={this.toggleNavigation} isOpen={this.state.isOpen} />
         </nav>
+
         {isOpen &&
         <div onClick={this.toggleNavigation} className={styles.overlay} />
         }

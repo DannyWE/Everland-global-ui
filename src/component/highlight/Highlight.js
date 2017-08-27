@@ -56,7 +56,7 @@ class HighLight extends Component {
           <p><ReactRevealText show={this.state.show2} text={details} /></p>
         </div>
         <div className={styles.link}>
-          <a className={styles.linkAnchor} href="#">
+          <a className={styles.linkAnchor} href="/project">
             <ReactRevealText show={this.state.show3} text={"view project"} />
           </a>
         </div>

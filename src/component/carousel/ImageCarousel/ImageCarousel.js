@@ -11,16 +11,20 @@ import arrowDown from '../assets/arrow-down.png';
 
 const projectDetails = [
   {
-    title: "Sydney",
+    title: "Melbourne",
     details: "the great view"
   },
   {
-    title: "Melbourne",
+    title: "Sydney",
     details: "the city view"
   },
   {
-    title: "Sydney",
+    title: "Melbourne",
     details: "investment choice"
+  },
+  {
+    title: "View ...",
+    details: "More ..."
   }
 ];
 
@@ -90,6 +94,9 @@ export default class ImageCarousel extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: false,
+      draggable: false,
+      swipe: false,
+      swipeToSlide: false,
       afterChange: this.updateHighLight
     };
 

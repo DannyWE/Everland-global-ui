@@ -2,13 +2,20 @@ import React from 'react';
 
 import styles from './Links.scss';
 
-const Links = ({ links, contactUs }) => (
+const Links = ({ links, contactUs, toggleNavigation, isOpen }) => (
   <ul className={styles.links}>
     { links.map((link, index) => {
       if (link.title === 'contactUs') {
         return (
           <li className={styles.link} key={index}>
-            <div className={styles.text} onClick={contactUs}>
+            <div className={styles.text} onClick={ () => {
+              {
+                isOpen && toggleNavigation();
+              }
+              setTimeout(() => {
+                contactUs();
+              }, 300);
+            }}>
               {link.text}
             </div>
           </li>

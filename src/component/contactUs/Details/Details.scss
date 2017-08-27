@@ -45,8 +45,13 @@
   display: block;
   text-decoration: none;
   composes: text-truncate;
+  width: 150px;
   border-bottom: 1px solid #e1e4e6;
   padding: 3px 0 8px;
+
+  @include tablet {
+    width: auto;
+  }
 }
 
 .emailTitle {
@@ -79,12 +84,20 @@
   width: 24px;
   position: absolute;
   right: 16px;
-  top: 90px;
+  top: 75px;
+
+  @include tablet {
+    top: 83px;
+  }
 }
 
 .emailImg {
   width: 24px;
   position: absolute;
   right: 16px;
-  top: 140px
+  top: 130px;
+
+  @include tablet {
+    top: 130px;
+  }
 }
