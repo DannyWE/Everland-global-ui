@@ -8,6 +8,7 @@ import ProjectList from './component/projectList/ProjectList';
 import Carousel from './component/carousel/Carousel';
 import PeopleList from './component/people/PeopleList';
 import Header from './component/newHeader/Header';
+import Footer from './component/footer/Footer';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -19,6 +20,7 @@ ReactDOM.render(
         <Route path="/project" component={ProjectList}/>
         <Route path="/about" component={PeopleList}/>
       </Switch>
+      <Footer />
     </div>
   </BrowserRouter>,
   document.getElementById('root'),

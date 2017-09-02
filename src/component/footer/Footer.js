@@ -16,14 +16,6 @@ export default () => (
               <i className={`${styles.icon} ${styles.facebook}`}/>
             </a>
           </li>
-          <li>
-            <a target="_blank"
-               href="https://twitter.com/everlandglobal"
-               title="everlandglobal.com Twitter"
-               className={styles.link}>
-              <i className={`${styles.icon} ${styles.twitter}`}/>
-            </a>
-          </li>
           <li><
             a target="_blank"
                  href="http://www.linkedin.com/company/everlandglobal"
@@ -40,9 +32,25 @@ export default () => (
               <i className={`${styles.icon} ${styles.googleplus}`}/>
             </a>
           </li>
+          <li>
+            <a target="_blank"
+               href="#"
+               title="everlandglobal.com WeChat"
+               className={styles.link}>
+              <i className={`${styles.icon} ${styles.wechat}`}/>
+            </a>
+          </li>
+          <li>
+            <a target="_blank"
+               href="#"
+               title="everlandglobal.com instagram"
+               className={styles.link}>
+              <i className={`${styles.icon} ${styles.instagram}`}/>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
-    <div className={styles.copyright}><p>everlandglobal.com is owned and operated by Everland Global Ltd.</p></div>
+    {/*<div className={styles.copyright}><p>everlandglobal.com is owned and operated by Everland Global Ltd.</p></div>*/}
   </div>
 )

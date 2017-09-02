@@ -1,28 +1,42 @@
+@import 'global';
+
 .container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
   font-weight: 500;
   line-height: 1.4;
   max-width: 1079px;
   box-sizing: border-box;
-  margin: 0 auto;
   margin-top: 14px;
-  background-color: #262f36;
   color: #fff;
   font-size: .875rem;
-  padding: 16px 20px 60px;
-  height: 130px;
+  padding: 16px 20px 0;
+  height: 60px;
+  //background-color: #262f36;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include desktop {
+    width: auto;
+    display: block;
+  }
 
 }
 .copyright {
   font-size: .8125rem;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .socialAndLegal {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .social {
   float: left;
   margin-bottom: 10px;
-  margin-right: 50px;
 
   ul {
     padding: 0;
@@ -84,4 +98,10 @@
 
 .googleplus {
   background-image: url('./assets/googleplus.svg');
+}
+.wechat {
+  background-image: url('./assets/wechat.svg');
+}
+.instagram {
+  background-image: url('./assets/instagram.svg');
 }

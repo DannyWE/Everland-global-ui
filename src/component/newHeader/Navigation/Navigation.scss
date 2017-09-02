@@ -2,6 +2,11 @@
 
 $mobile-panel-width: 80%;
 
+html,
+body {
+  height: 100%;
+}
+
 .container {
   display: flex;
 
