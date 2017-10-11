@@ -10,12 +10,10 @@
 }
 
 .logo {
-  height: 40px;
   //display: flex;
   //align-items: center;
 
   @include tablet {
-    height: 50px;
   }
 }
 
@@ -28,10 +26,11 @@
   transform: translate(-50%, 0);
 
   @include tablet {
+    height: 55px;
+    width: 276px;
   }
 
   @include desktop {
-    height: 50px;
-    width: 210px;
+
   }
 }
