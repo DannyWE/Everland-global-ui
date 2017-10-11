@@ -9,23 +9,23 @@ const links = [
   {
     href: '/about',
     title: '',
-    text: 'About',
+    text: 'About us',
   },
-  {
-    href: '/project',
-    title: '',
-    text: 'Projects',
-  },
-  {
-    href: '/news',
-    title: '',
-    text: 'News',
-  },
-  {
-    href: '/contact',
-    title: 'contactUs',
-    text: 'Contact',
-  }
+  // {
+  //   href: '/project',
+  //   title: '',
+  //   text: 'Our Projects',
+  // },
+  // {
+  //   href: '/news',
+  //   title: '',
+  //   text: 'News and Media',
+  // },
+  // {
+  //   href: '/contact',
+  //   title: 'contactUs',
+  //   text: 'Contact Us',
+  // }
 ];
 
 class Header extends Component {
@@ -39,12 +39,6 @@ class Header extends Component {
     const { notesOpen } = this.state;
     this.setState({ notesOpen: !notesOpen });
   }
-  //
-  // componentDidMount() {
-  //   setTimeout(() => {
-  //     this.toggleNotesOverlay();
-  //   }, 1000);
-  // }
 
   render() {
     return (
