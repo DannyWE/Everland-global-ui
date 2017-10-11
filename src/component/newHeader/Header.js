@@ -44,7 +44,7 @@ class Header extends Component {
     return (
       <div className={styles.container}>
         <Logo />
-        <Navigation links={links} contactUs={this.toggleNotesOverlay} />
+        <Navigation links={[]} contactUs={this.toggleNotesOverlay} />
 
         {this.state.notesOpen &&
           <ContactUs
