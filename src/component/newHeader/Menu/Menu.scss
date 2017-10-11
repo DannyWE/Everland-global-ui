@@ -1,50 +1,26 @@
 @import 'global';
 
-$border-width: 5px;
-$userIconSize: 29px;
-$userIconSizeMobile: 24px;
 $arrowDownIconHeight: 10px;
-$dropDownContainerWidth: 300px;
+$border-width: 5px;
 $dropDownContainerPadding: 9px;
 
 .container {
-  position: relative;
-  order: 3;
-  cursor: pointer;
-  font-size: $font-sm;
 
-  @include tablet {
-    display: inline-block;
-  }
-}
-
-.userIcon,
-.userIcon > img {
-  width: $userIconSizeMobile;
-  height: $userIconSizeMobile;
-
-  @include tablet {
-    width: $userIconSize;
-    height: $userIconSize;
-  }
-}
-
-.title {
   display: none;
 
   @include tablet {
-    display: inline-block;
-    margin-left: $space-sm;
-    font-size: $font-xs;
-  }
+    display: block;
+    font-family: Museo-Sans-700,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #757575;
+    font-size: 16px;
 
-  @include desktop {
-    font-size: $font-sm;
+    cursor: pointer;
   }
 }
 
 .arrowDownIcon {
-  display: none;
 
   @include tablet {
     display: inline-block;
@@ -54,9 +30,20 @@ $dropDownContainerPadding: 9px;
   }
 }
 
+.arrowUpIcon {
+
+  @include tablet {
+    display: inline-block;
+    height: $arrowDownIconHeight;
+    transform: rotate(-90deg);
+    margin-left: $space-xs;
+  }
+}
+
 .dropDownContainer {
   background-color: $color-white;
-  width: $dropDownContainerWidth;
+  width: 100%;
+  height: 100px;
   padding: $dropDownContainerPadding 0;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -82,7 +69,4 @@ $dropDownContainerPadding: 9px;
     }
   }
 
-  :nth-child(4) > div {
-    border-bottom: none;
-  }
 }

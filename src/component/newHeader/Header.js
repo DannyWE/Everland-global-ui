@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Navigation from './Navigation/Navigation';
 import Logo from './Logo/Logo';
+import Menu from './Menu/Menu';
 import styles from './Header.scss';
 import ContactUs from '../contactUs/ContactUs';
 
@@ -44,6 +45,7 @@ class Header extends Component {
     return (
       <div className={styles.container}>
         <Logo />
+        <Menu />
         <Navigation links={[]} contactUs={this.toggleNotesOverlay} />
 
         {this.state.notesOpen &&
