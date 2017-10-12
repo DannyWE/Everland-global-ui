@@ -43,7 +43,7 @@ class Header extends Component {
 
   render() {
     return (
-      <div className={styles.container}>
+      <div id="headerContainer" className={styles.container}>
         <Logo />
         <Menu />
         <Navigation links={[]} contactUs={this.toggleNotesOverlay} />
