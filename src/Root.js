@@ -10,15 +10,27 @@ import PeopleList from './component/people/PeopleList';
 import Contact from './component/contact/Contact';
 import Header from './component/newHeader/Header';
 
+import image1Url1 from './component/assets/1.png';
+import image1Url2 from './component/assets/2.png';
+import image1Url3 from './component/assets/3.png';
+import image1Url4 from './component/assets/4.png';
+
+const photos = [
+  image1Url1,
+  image1Url2,
+  image1Url3,
+  image1Url4,
+];
+
 ReactDOM.render(
   <BrowserRouter>
     <div className={styles.container}>
       <Header />
       <Switch>
-        <Route exact path="/" component={Carousel} />
+        <Route exact path="/" render={(props) => (<Carousel photos={photos} /> )} />
         <Route path="/news" component={NewsList}/>
         <Route path="/project" component={ProjectList}/>
-        <Route path="/about" component={Carousel}/>
+        <Route path="/about" render={(props) => (<Carousel photos={photos} /> )}/>
         <Route path="/contact" component={Contact}/>
       </Switch>
     </div>
