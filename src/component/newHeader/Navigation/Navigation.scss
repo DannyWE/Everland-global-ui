@@ -22,19 +22,19 @@ body {
   left: 0;
   width: $mobile-panel-width;
   height: 100vh;
-  background: $color-bluestone;
+  background: $color-pebble-50;
   overflow: hidden;
   transform: translate(-100%);
 
-  @include tablet {
-    display: flex;
-    height: 60px;
-    flex-grow: 1;
-    position: relative;
-    background: transparent;
-    transform: inherit;
-    width: auto;
-  }
+  //@include tablet {
+  //  display: flex;
+  //  height: 60px;
+  //  flex-grow: 1;
+  //  position: relative;
+  //  background: transparent;
+  //  transform: inherit;
+  //  width: auto;
+  //}
 }
 
 //  Ensures our HTML has a
@@ -49,9 +49,9 @@ body {
   transform: translate($mobile-panel-width);
   overflow: hidden;
 
-  @include tablet {
-    transform: translate(0%);
-  }
+  //@include tablet {
+  //  transform: translate(0%);
+  //}
 }
 
 .overlay {

@@ -39,13 +39,13 @@ class Menu extends Component {
         </div>
         <div id="dropDownMenu" className={`${styles.dropDownContainer}`}>
           <span className={styles.menuItem}>
-            <a href="/about" className={styles.menuItemStyle} >About US</a>
+            <a href="/about" className={styles.menuItemStyle} >About Us</a>
           </span>
           <span className={styles.menuItem}>
-            <a href="/contact" className={styles.menuItemStyle} >Contact US</a>
+            <a href="/contact" className={styles.menuItemStyle} >Contact Us</a>
           </span>
           <span className={styles.menuItem}>
-            <a href="/chinese" className={styles.menuItemStyle} >中文</a>
+            <a href="/" className={styles.menuItemStyle} >中文</a>
           </span>
         </div>
       </div>

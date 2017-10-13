@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Footer.scss';
+import styles from './SocialLinks.scss';
 
 export default () => (
   <div className={styles.container}>
