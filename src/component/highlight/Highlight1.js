@@ -31,22 +31,6 @@ class HighLight extends Component {
 
   render() {
     const { title, details} = this.props;
-    // console.log('title: ',title);
-
-    // if (!this.state.show1) {
-    //   return (
-    //     <div className={styles.container}>
-    //       <div className={styles.title}>
-    //         <p>
-    //         </p>
-    //       </div>
-    //       <div className={styles.link}>
-    //         <a className={styles.linkAnchor} href="#">
-    //         </a>
-    //       </div>
-    //     </div>
-    //   );
-    // }
     return (
       <div className={styles.container}>
         <div className={styles.title}>

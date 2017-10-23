@@ -8,7 +8,6 @@ export default class Carousel extends Component {
     imageCarousel: null,
   }
   componentDidMount() {
-    console.log(this.props);
     this.setState({
       imageCarousel: <ImageCarousel photos={this.props.photos} />
     })

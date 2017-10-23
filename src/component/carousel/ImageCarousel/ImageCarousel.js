@@ -8,25 +8,7 @@ import Highlight2 from '../../highlight/Highlight2';
 import Highlight3 from '../../highlight/Highlight3';
 import arrowUp from '../assets/arrow-up.png';
 import arrowDown from '../assets/arrow-down.png';
-
-const projectDetails = [
-  {
-    title: "Melbourne",
-    details: "Day view"
-  },
-  {
-    title: "Melbourne",
-    details: "Night view"
-  },
-  {
-    title: "Sydney",
-    details: "View"
-  },
-  {
-    title: "Shanghai",
-    details: "View"
-  }
-];
+import highlightDetailsFunc from './DataProvider';
 
 const NextArrow = (props) => {
   return (
@@ -50,14 +32,16 @@ const PrevArrow = (props) => {
   )
 };
 
+const highlightDetails = highlightDetailsFunc();
+
 let _this;
 export default class ImageCarousel extends Component {
   constructor() {
     super();
     this.orientationChangeHandler = this.orientationChangeHandler.bind(this);
     this.state = {
-      title: projectDetails[0].title,
-      details: projectDetails[0].details,
+      title: highlightDetails[0].title,
+      details: highlightDetails[0].details,
     };
     _this = this;
   }
@@ -71,7 +55,7 @@ export default class ImageCarousel extends Component {
     this.forceUpdate();
   }
   updateHighLight(index) {
-    const {title, details} = projectDetails[index];
+    const {title, details} = highlightDetails[index];
     _this.setState({
       title: title,
       details: details,
@@ -100,18 +84,18 @@ export default class ImageCarousel extends Component {
 
     let Component;
     if (
-      this.state.title === projectDetails[0].title
-      && this.state.details === projectDetails[0].details
+      this.state.title === highlightDetails[0].title
+      && this.state.details === highlightDetails[0].details
     ) {
       Component = Highlight1;
     } else if (
-      this.state.title === projectDetails[1].title
-      && this.state.details === projectDetails[1].details
+      this.state.title === highlightDetails[1].title
+      && this.state.details === highlightDetails[1].details
     ) {
       Component = Highlight2;
     } else if (
-      this.state.title === projectDetails[2].title
-      && this.state.details === projectDetails[2].details
+      this.state.title === highlightDetails[2].title
+      && this.state.details === highlightDetails[2].details
     ) {
       Component = Highlight3;
     } else {
