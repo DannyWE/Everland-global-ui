@@ -41,7 +41,8 @@
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "react-slick": "0.14.6",
-    "styled-components": "^2.1.1"
+    "styled-components": "^2.1.1",
+    "yarn": "^1.2.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",

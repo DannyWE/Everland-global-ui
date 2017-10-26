@@ -23,10 +23,9 @@ class Contact extends Component {
 
     return (
       <div className={styles.container}>
-
         <div className={styles.leftContainer}>
           <p className={styles.subHeading}>{contactInfo.subHeading}</p>
-          <p className={styles.company}>{contactInfo.company}</p>
+          {/*<p className={styles.company}>{contactInfo.company}</p>*/}
           <p className={styles.location}><em>{contactInfo.location}</em></p>
           <p className={styles.basic}>Level 40, 525 Collins Street, Melbourne VIC 3000, Australia</p>
           <p className={styles.basic}><a className={styles.anchorStyles} href="tel:0431550063">P : +61 431 550 063</a></p>
