@@ -5,6 +5,7 @@ import Logo from './Logo/Logo';
 import Menu from './Menu/Menu';
 import styles from './Header.scss';
 import ContactUs from '../contactUs/ContactUs';
+import headerListFunc from './DataProvider';
 
 const links = [
   {
@@ -42,11 +43,13 @@ class Header extends Component {
   }
 
   render() {
+    const headerList = headerListFunc();
+
     return (
       <div id="headerContainer" className={styles.container}>
         <Logo />
-        <Menu />
-        <Navigation links={[]} contactUs={this.toggleNotesOverlay} />
+        <Menu headerList={headerList} />
+        <Navigation links={headerList} contactUs={this.toggleNotesOverlay} />
 
         {this.state.notesOpen &&
           <ContactUs

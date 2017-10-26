@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Icon from './../../Icon/Icon';
 import styles from './Menu.scss';
-import headerTextListFunc from './../DataProvider'
+import setPreference from './../../service/setPreference';
 
 class Menu extends Component {
   constructor() {
@@ -19,13 +19,7 @@ class Menu extends Component {
     this.setState({
       showMenu: true
     }, () => {
-      if (window && window.localStorage) {
-        if (window.localStorage.getItem('everlandGlobalLan') === null || window.localStorage.getItem('everlandGlobalLan') === 'english') {
-          window.localStorage.setItem('everlandGlobalLan', 'chinese');
-        } else {
-          window.localStorage.setItem('everlandGlobalLan', 'english');
-        }
-      }
+      setPreference();
       window.location='/';
     });
   }
@@ -45,24 +39,25 @@ class Menu extends Component {
   }
 
   render() {
-    const headerTextList = headerTextListFunc();
+    const { headerList } = this.props;
+
     return (
       <div className={styles.container} onClick={this.toggleMenu}>
         <div className={styles.menuAndArrow} >
-          {headerTextList.title}
+          {headerList.title.text}
           {this.state.showMenu ? (
             <Icon overrideClass={styles.arrowUpIcon} name="arrow" />
           ) : (<Icon overrideClass={styles.arrowDownIcon} name="arrow" />)}
         </div>
         <div id="dropDownMenu" className={`${styles.dropDownContainer}`}>
           <span className={styles.menuItem}>
-            <a href="/about" className={styles.menuItemStyle} >{headerTextList.aboutUs}</a>
+            <a href={headerList.about.href} className={styles.menuItemStyle} >{headerList.about.text}</a>
           </span>
           <span className={styles.menuItem}>
-            <a href="/contact" className={styles.menuItemStyle} >{headerTextList.contactUs}</a>
+            <a href={headerList.contact.href} className={styles.menuItemStyle} >{headerList.contact.text}</a>
           </span>
           <span className={styles.menuItem}>
-            <a onClick={this.setPreference} >{headerTextList.language}</a>
+            <a onClick={this.setPreference} className={styles.menuItemStyle} >{headerList.language.text}</a>
           </span>
         </div>
       </div>

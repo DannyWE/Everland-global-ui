@@ -41,7 +41,7 @@ class Navigation extends Component {
         </div>
 
         <nav className={styles.navigation}>
-          <Links links={links} contactUs={contactUs} toggleNavigation={this.toggleNavigation} isOpen={this.state.isOpen} />
+          <Links links={links} toggleNavigation={this.toggleNavigation} isOpen={this.state.isOpen} />
         </nav>
 
         {isOpen &&
