@@ -26,11 +26,10 @@ class Contact extends Component {
           <p className={styles.company}>Everland Global</p>
           <p className={styles.location}><em>Melbourne</em></p>
           <p className={styles.basic}>Level 40, 525 Collins Street, Melbourne VIC 3000, Australia</p>
-          <p className={styles.basic}>P : +61 431 550 063</p>
+          <p className={styles.basic}><a className={styles.anchorStyles} href="tel:0431550063">P : +61 431 550 063</a></p>
           <p className={styles.basic}>E : info@everlandglobal.com</p>
         </div>
         <div id="googleMap" className={styles.rightContainer}>
-
         </div>
         <SocialLinks />
       </div>
