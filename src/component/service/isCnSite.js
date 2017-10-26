@@ -1,3 +1,3 @@
 export default function () {
-  return window.location.pathname.indexOf('/cn') !== -1;
+  return window && window.localStorage && window.localStorage.getItem('everlandGlobalLan') === 'chinese';
 };

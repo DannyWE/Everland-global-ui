@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from './Contact.scss';
 import SocialLinks from './../socialLink/SocialLinks';
 import scriptService from './scriptService';
+import contactInfoFunc from './DataProvider';
 
 class Contact extends Component {
   constructor(props) {
@@ -18,13 +19,15 @@ class Contact extends Component {
   }
 
   render() {
+    const contactInfo = contactInfoFunc();
+
     return (
       <div className={styles.container}>
 
         <div className={styles.leftContainer}>
-          <p className={styles.subHeading}>Contact US</p>
-          <p className={styles.company}>Everland Global</p>
-          <p className={styles.location}><em>Melbourne</em></p>
+          <p className={styles.subHeading}>{contactInfo.subHeading}</p>
+          <p className={styles.company}>{contactInfo.company}</p>
+          <p className={styles.location}><em>{contactInfo.location}</em></p>
           <p className={styles.basic}>Level 40, 525 Collins Street, Melbourne VIC 3000, Australia</p>
           <p className={styles.basic}><a className={styles.anchorStyles} href="tel:0431550063">P : +61 431 550 063</a></p>
           <p className={styles.basic}>E : info@everlandglobal.com</p>

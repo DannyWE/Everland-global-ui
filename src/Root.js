@@ -26,7 +26,6 @@ ReactDOM.render(
       <Header />
       <Switch>
         <Route exact path="/" render={(props) => (<Carousel photos={photos} /> )} />
-        <Route exact path="/en" render={(props) => (<Carousel photos={photos} /> )} />
         <Route path="/news" component={NewsList}/>
         <Route path="/project" component={ProjectList}/>
         <Route path="/about" render={(props) => (<Carousel photos={photos} /> )}/>
