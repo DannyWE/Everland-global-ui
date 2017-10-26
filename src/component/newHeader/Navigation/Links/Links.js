@@ -17,6 +17,12 @@ const Links = ({ links, contactUs, toggleNavigation, isOpen }) => (
       <a className={styles.text} href={links.contact.href} title={links.contact.title}>
         {links.contact.text}
       </a>
+      <a className={styles.text} href={links.project.href} title={links.project.title}>
+        {links.project.text}
+      </a>
+      <a className={styles.text} href={links.news.href} title={links.news.title}>
+        {links.news.text}
+      </a>
       <a className={styles.text} onClick={languageAction} title={links.language.title}>
         {links.language.text}
       </a>

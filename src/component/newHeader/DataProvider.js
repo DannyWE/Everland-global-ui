@@ -18,6 +18,16 @@ const headerTextListFunc = () => {
         title: '联系我们',
         text: '联系我们',
       },
+      project: {
+        href: '/project',
+        title: '项目',
+        text: '项目',
+      },
+      news: {
+        href: '/news',
+        title: '新闻',
+        text: '新闻'
+      },
       language: {
         href: '/',
         title: 'English',
@@ -40,6 +50,16 @@ const headerTextListFunc = () => {
       href: '/contact',
       title: 'Contact Us',
       text: 'Contact Us',
+    },
+    project: {
+      href: '/project',
+      title: 'Our Projects',
+      text: 'Our Projects',
+    },
+    news: {
+      href: '/news',
+      title: 'News and Media',
+      text: 'News and Media'
     },
     language: {
       href: '/',

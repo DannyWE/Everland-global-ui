@@ -57,6 +57,12 @@ class Menu extends Component {
             <a href={headerList.contact.href} className={styles.menuItemStyle} >{headerList.contact.text}</a>
           </span>
           <span className={styles.menuItem}>
+            <a href={headerList.project.href} className={styles.menuItemStyle} >{headerList.project.text}</a>
+          </span>
+          <span className={styles.menuItem}>
+            <a href={headerList.news.href} className={styles.menuItemStyle} >{headerList.news.text}</a>
+          </span>
+          <span className={styles.menuItem}>
             <a onClick={this.setPreference} className={styles.menuItemStyle} >{headerList.language.text}</a>
           </span>
         </div>

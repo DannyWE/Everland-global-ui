@@ -1,0 +1,20 @@
+@import 'global';
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 36%;
+  font-family: Museo-Sans-700,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #757575;
+  font-size: 22px;
+
+  @include tablet {
+    left: 40%;
+  }
+
+  @include desktop {
+    left: 45%;
+  }
+}
