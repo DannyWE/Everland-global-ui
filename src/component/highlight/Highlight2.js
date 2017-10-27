@@ -35,13 +35,13 @@ class HighLight extends Component {
       <div className={styles.container}>
         <div className={styles.title}>
           <p>
-            <ReactRevealText show={this.state.show1} text={title} />
+            {/*<ReactRevealText show={this.state.show1} text={title} />*/}
           </p>
-          <p><ReactRevealText show={this.state.show2} text={details} /></p>
+          <p><ReactRevealText show={this.state.show2} text={title} /></p>
         </div>
         <div className={styles.link}>
           <a className={styles.linkAnchor} href="/project">
-            <ReactRevealText show={this.state.show3} text={"view project"} />
+            <ReactRevealText show={this.state.show3} text={details} />
           </a>
         </div>
       </div>

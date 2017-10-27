@@ -18,6 +18,8 @@ import image1Url4 from './component/assets/4.png';
 const photos = [
   image1Url1,
   image1Url2,
+  image1Url3,
+  image1Url4
 ];
 
 ReactDOM.render(
