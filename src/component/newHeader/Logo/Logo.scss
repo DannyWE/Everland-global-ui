@@ -19,7 +19,7 @@
 
 .svg {
   height: 40px;
-  width: 182px;
+  width: 150px;
   position: fixed;
   top: 6px;
   left: 50%;
@@ -27,7 +27,7 @@
 
   @include tablet {
     height: 55px;
-    width: 276px;
+    width: 210px;
   }
 
   @include desktop {
