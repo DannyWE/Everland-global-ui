@@ -34,7 +34,6 @@
     "mixpanel-browser": "^2.13.0",
     "normalize-scss": "^7.0.0",
     "nuka-carousel": "^2.2.1",
-    "rca-footer-component": "git+ssh://git@git.realestate.com.au:rca/rca-footer-component.git#v1.0.5",
     "react": "15.6.1",
     "react-dom": "15.6.1",
     "react-reveal-text": "^0.0.3",
